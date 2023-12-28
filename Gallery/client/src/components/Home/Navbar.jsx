@@ -58,7 +58,7 @@ function Navbar() {
           
 
         </div>
-        <div>
+        <div className='max-[900px]:hidden'>
                 <span className='text-[30px] font-bold text-[#0D5C63] uppercase'>[MYGallery]</span>
         </div>
         <div className='flex items-center gap-[30px]'>
