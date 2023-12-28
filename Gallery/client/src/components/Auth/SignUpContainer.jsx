@@ -68,7 +68,7 @@ function SignUpContainer({setLoginState}) {
       <div className="w-[50%] h-[80px] flex items-center  fixed top-0  bg-white shadow-sm z-50">
         <span className="text-[30px] text-[#0D5C63] m-[30px] font-bold uppercase">[MYGallery]</span>
       </div>
-      <div className="w-[70%] h-[80%] min-h-[50%] py-4 my-[30px] mt-[500px] mx-auto border border-gray-300 rounded-[20px] flex flex-col justify-center items-center gap-[20px]">
+      <div className="w-[70%] h-[80%] min-h-[50%] py-4 my-[30px] mt-[650px] mx-auto border border-gray-300 rounded-[20px] flex flex-col justify-center items-center gap-[20px]">
         <div className="w-[80%] flex flex-col gap-[10px]">
           <span className="text-[30px] font-bold text-[#0D5C63]">Sign up</span>
          {error && <span>{error}</span>}
