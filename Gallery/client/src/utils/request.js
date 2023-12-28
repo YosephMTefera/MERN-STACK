@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://your-gallery.onrender.com",
 });
 
 export default apiRequest;
