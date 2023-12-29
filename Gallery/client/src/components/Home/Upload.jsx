@@ -43,11 +43,13 @@ function Upload() {
 
 
       }).catch((error)=>{
+        setLoading(false);
         setResponseError(error.response.data.message)
       })
 
       
     } catch (error) {
+      setLoading(false);
       setServerError(true)
       
     }
