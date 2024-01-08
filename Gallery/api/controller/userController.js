@@ -1,4 +1,4 @@
-import User from "../model/User.js";
+timport User from "../model/User.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { createTransport } from "nodemailer";
@@ -213,7 +213,7 @@ const updateUser = async (req, res) => {
         username: username ? username : findUser?.username,
         email: email ? email : findUser?.email,
         phone: phone ? phone : findUser?.phone,
-        profileImg: userImagedownloadURL
+        profileImg: filename
           ? userImagedownloadURL
           : findUser?.profileImg,
         country: country ? country : findUser?.country,
