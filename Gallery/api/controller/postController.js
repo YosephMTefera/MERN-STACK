@@ -29,8 +29,8 @@ const getAllPosts = async (req, res) => {
 };
 
 const addPost = async (req, res) => {
-  const { userID, title, caption, category } = req.body;
-  const postPicture = req?.file?.filename || req?.file?.originalname;
+  const { userID, title, caption, category,fileName } = req.body;
+  const postPicture = req?.file?.filename || req?.file?.originalname || fileName;
 
   try {
     const uniqueSuffix = Date.now() + "_" + Math.round(Math.random() * 1e9);
