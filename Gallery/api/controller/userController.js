@@ -1,4 +1,4 @@
-timport User from "../model/User.js";
+import User from "../model/User.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { createTransport } from "nodemailer";
