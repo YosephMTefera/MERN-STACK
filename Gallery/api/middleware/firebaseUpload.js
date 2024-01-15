@@ -19,7 +19,7 @@ const firebaseUpload = multer({
     cb(null, true);
   },
   limits: {
-    fileSize: 2048 * 2048,
+    fileSize: 10 * 1024 * 1024,
   },
 }).single("picture");
 
