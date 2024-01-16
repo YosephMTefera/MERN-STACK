@@ -172,8 +172,9 @@ const updateUser = async (req, res) => {
     city,
     profession,
     status,
+    fileName
   } = req.body;
-  const picture = req?.file?.filename || req?.file?.originalname;
+  const picture = req?.file?.filename || req?.file?.originalname || fileName;
 
   try {
     if (!id)
