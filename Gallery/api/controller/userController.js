@@ -280,7 +280,7 @@ const userForgotPassword = async (req, res) => {
         expiresIn: "30m",
       }
     );
-    const link = `http://localhost:3000/reset-password/${findUser._id}/${token}`;
+    const link = `https://mygallery-6ce7d.web.app/reset-password/${findUser._id}/${token}`;
     var transporter = createTransport({
       service: "gmail",
       auth: {
